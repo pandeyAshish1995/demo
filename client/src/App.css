@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  border: "1px solid red";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.screens-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  width: 100%;
+  max-width: 780px;
+}
+table,
+th,
+td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+th {
+  background-color: #6ea7dc;
+  color: white;
+}
+.table-title {
+  background-color: #efefef;
+}
+.empty-row > td {
+  height: 18px;
+}
+.action-cell {
+  height: 29px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+}
+.modal-backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000099;
+  position: absolute;
+  z-index: 1000;
+}
+.modal-backdrop > .modal {
+  width: 780px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+.modal-backdrop > .modal > .modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 30px;
+}
+.modal-backdrop > .modal > .modal-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.modal-backdrop > .modal > .modal-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.button-close {
+  width: 30px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: gray;
+}
+.button-save {
+  height: 30px;
+  background-color: #6ea7dc;
+  border: 0;
+  outline: 0;
+  color: white;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button-cancel {
+  height: 30px;
+  border: 1px solid lightgray;
+  outline: 0;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+  color: gray;
+}
+.form-item > select, input, textarea {
+  width: 500px;
+}
+.form-item > textarea {
+  min-height: 100px;
+}
