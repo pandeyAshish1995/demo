@@ -3,8 +3,8 @@ demo-repo
 steps:
 clone this repo demo
 
-To run web ( after clone ):
-cd demo/client
+To run web ( after clone ): \n
+cd demo/client  \n
 npm i
 npm start
 
