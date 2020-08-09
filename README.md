@@ -14,3 +14,6 @@ cd demo/server
 npm i
 node Server.js
 
+Note:
+Mongo should be installed and running on default port 27017
+
